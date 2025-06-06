@@ -6,14 +6,18 @@ for (int i = 0; i < names.Length; i++)
     {
         names[i] = "Sammy";
     }
-}
 
+// desde aqui 
 foreach (var name in names)
 {
     Console.WriteLine(name);
 }
 
-for (int i = 0; i < 20; i++)
+for (int x = 0; x < 20; x++)
 {
-    Console.WriteLine(i);
+    Console.WriteLine(x);
 }
+
+
+}
+
