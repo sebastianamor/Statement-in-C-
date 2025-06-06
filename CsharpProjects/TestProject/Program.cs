@@ -10,14 +10,14 @@ for (int i = 0; i < names.Length; i++)
 // desde aqui 
 foreach (var name in names)
 {
-    Console.WriteLine(name);
+    
 }
 
 for (int x = 0; x < 20; x++)
 {
-    Console.WriteLine(x);
+    
 }
 
-
+Console.WriteLine( $"Product: {names}  ");
 }
 
