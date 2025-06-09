@@ -1,14 +1,23 @@
-﻿
-string[] names = { "Alex", "Eddie", "David", "Michael" };
-for (int i = names.Length - 1; i >= 0; i--) {}
-
-for (int i = 0; i < 10; i++)
+﻿for (int i = 1; i <= 20; i++)
 {
-    if (i == 7) break;
-}
-
-
-for (int i = 0; i < 10; i += 3)
-{
-    Console.WriteLine( $"{i} {names[i]}");
+    // Check for divisibility by both 3 and 5 first
+    if (i % 3 == 0 && i % 5 == 0)
+    {
+        Console.WriteLine($"{i} - FizzBuzz");
+    }
+    // Then check for divisibility by 3
+    else if (i % 3 == 0)
+    {
+        Console.WriteLine($"{i} - Fizz");
+    }
+    // Then check for divisibility by 5
+    else if (i % 5 == 0)
+    {
+        Console.WriteLine($"{i} - Buzz");
+    }
+    // If none of the above, just print the number
+    else
+    {
+        Console.WriteLine(i);
+    }
 }
